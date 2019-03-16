@@ -31,6 +31,7 @@ imageIndex = 1458
 print(inputData[inputData.columns[0]][imageIndex])
 # Draw graphical representation of the predicted number
 plt.imshow(X[imageIndex].reshape(28, 28), cmap='Greys')
+plt.savefig('figure.png')
 plt.show(block=False)
 plt.pause(3)
 
