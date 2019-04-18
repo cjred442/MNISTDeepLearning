@@ -17,7 +17,6 @@ from keras.models import load_model
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' # or [0, 1, 2] 
 tf.logging.set_verbosity(tf.logging.ERROR)
 
-
 inputData = pd.read_csv('mnist.csv')
 
 X = inputData.drop(inputData.columns[0], axis=1).values
